@@ -12,29 +12,56 @@ var squadre =
 [
     {
         nome: "Inter",
-        puntiFatti: getRandomNumber(20,80),
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+
+    {
+        nome: "Milan",
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+
+    {
+        nome: "Juventus",
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+
+    {
+        nome: "Catania",
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+];
+
+for ( var i = 0; i < squadre.length; i++) {
+    squadre[i].puntiFatti = Math.floor(Math.random() * 100);
+    squadre[i].falliSubiti = Math.floor(Math.random() * 60);
+}
+console.log(squadre);
+
+var secondoArray = 
+[
+    {
+        nome: "Inter",
         falliSubiti: getRandomNumber(6, 25)
     },
 
     {
         nome: "Milan",
-        puntiFatti: getRandomNumber(20, 80),
         falliSubiti: getRandomNumber(6, 25)
     },
 
     {
         nome: "Juventus",
-        puntiFatti: getRandomNumber(20, 80),
         falliSubiti: getRandomNumber(6, 25)
     },
 
     {
         nome: "Catania",
-        puntiFatti: getRandomNumber(20, 80),
         falliSubiti: getRandomNumber(6, 25)
     },
-];
+]
 
-// puntiFatti = getRandomNumber(20, 80);
-// squadre.puntiFatti = getRandomNumber(20, 80);
-console.log(squadre);
+console.log(secondoArray);
