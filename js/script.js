@@ -26,7 +26,10 @@ var listaBici =
     }
 ];
 
+peso = [];
 for (var i = 0; i < listaBici.length; i++){
-var pesoMinore = Math.min(listaBici[i].peso);
+    peso.push(listaBici[i].peso)
+    peso.sort();
 }
-console.log(pesoMinore);
+
+console.log(peso[0]);
