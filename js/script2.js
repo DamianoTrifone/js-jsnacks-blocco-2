@@ -12,29 +12,29 @@ var squadre =
 [
     {
         nome: "Inter",
-        // puntiFatti: 0,
-        // falliSubiti: 0
+        puntiFatti: getRandomNumber(20,80),
+        falliSubiti: getRandomNumber(6, 25)
     },
 
     {
         nome: "Milan",
-        // puntiFatti: 0,
-        // falliSubiti: 0
+        puntiFatti: getRandomNumber(20, 80),
+        falliSubiti: getRandomNumber(6, 25)
     },
 
     {
         nome: "Juventus",
-        // puntiFatti: 0,
-        // falliSubiti: 0
+        puntiFatti: getRandomNumber(20, 80),
+        falliSubiti: getRandomNumber(6, 25)
     },
 
     {
         nome: "Catania",
-        // puntiFatti: 0,
-        // falliSubiti: 0
+        puntiFatti: getRandomNumber(20, 80),
+        falliSubiti: getRandomNumber(6, 25)
     },
 ];
 
 // puntiFatti = getRandomNumber(20, 80);
-squadre.puntiFatti = getRandomNumber(20, 80);
+// squadre.puntiFatti = getRandomNumber(20, 80);
 console.log(squadre);
